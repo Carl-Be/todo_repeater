@@ -4,6 +4,7 @@ Automizes reconfiguring repeated todos for a diffrent day.
 A function that handles repeated daily tasks ie., resets the checkboxes to empty and adds a user inputted value for how many days out the task will be repeated again. Best used if paired with the agenda plugin https://discourse.joplinapp.org/t/agenda/ by BeatLink.
 
 Examples:
+
 Title = "Repeat 7: <description>" will automatically reset the task 7 days from now
 
 Title = "Repeat 2: <description>" will automatically reset the task 2 days from now
