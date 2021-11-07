@@ -1,4 +1,5 @@
 import joplin from "api";
+import {ToolbarButtonLocation } from 'api/types';
 
 /** resetRepeated ****************************************************************************************************************************************
  * Author: Carl-Be
@@ -27,6 +28,30 @@ export async function resetRepeated() {
     }
 }
 
+
+export async function setUpPlugin(){
+    await setupCommands()
+    await setupControls()
+}
+
+async function setupCommands(){
+    await joplin.commands.register({
+        name: 'repeatNodesController',
+        label: 'Reset Daily Repeated Task ',
+        iconName: 'fas fa-redo',
+        execute: async () => {
+            await resetRepeated();
+        },
+    });
+}
+
+async function setupControls(){
+    await joplin.views.toolbarButtons.create(
+        'repeatTaskButton',
+        'repeatNodesController',
+        ToolbarButtonLocation.NoteToolbar
+    );
+}
 
 /** getTodos ****************************************************************************************************************************************
  * Author: BeatLink
@@ -84,3 +109,4 @@ export function groupBy(list, keyGetter) {
 
     return map;
 }
+
