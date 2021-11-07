@@ -5,8 +5,11 @@ A function that handles repeated daily tasks ie., resets the checkboxes to empty
 
 Examples:
 Title = "Repeat 7: <description>" will automatically reset the task 7 days from now
+
 Title = "Repeat 2: <description>" will automatically reset the task 2 days from now
+
 Title = "Repeat 1: <description>" will automatically reset the task 1 days from now
+
 Title = "Repeat n: <description>" will automatically reset the task n days from now
 
 The function only sets up the repeated task if it is the same date as the current date.
