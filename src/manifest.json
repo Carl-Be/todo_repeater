@@ -1,0 +1,12 @@
+{
+	"manifest_version": 1,
+	"id": "TodoRepeater",
+	"app_min_version": "2.2",
+	"version": "1.0.0",
+	"name": "Todo Repeater",
+	"description": "Automizes reconfiguring repeated todos for a diffrent day.",
+	"author": "Carl-Be",
+	"homepage_url": "https://github.com/Carl-Be/todo_repeater",
+	"repository_url": "https://github.com/Carl-Be/todo_repeater",
+	"keywords": []
+}
